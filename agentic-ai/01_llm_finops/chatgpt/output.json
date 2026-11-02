@@ -1,0 +1,44 @@
+{
+  "model": "ChatGPT (GPT-6)",
+  "script": "chatgpt/scrape.py",
+  "environment": "Python 3.9.6, requests 2.32.5, beautifulsoup4 4.15.0",
+  "runs": [
+    {
+      "site": "https://example.com",
+      "how_run": "as written (hard-coded target)",
+      "records_found": 0,
+      "csv_written": false,
+      "log": [
+        "2026-11-02 21:35:09,737 - INFO - Successfully scraped https://example.com. Found 0 records."
+      ],
+      "records": []
+    },
+    {
+      "site": "https://books.toscrape.com",
+      "how_run": "scrape_website() and save_to_csv() called with this URL",
+      "records_found": 0,
+      "csv_written": false,
+      "log": [
+        "2026-11-02 21:35:11,591 - INFO - Successfully scraped https://books.toscrape.com. Found 0 records."
+      ],
+      "records": []
+    },
+    {
+      "site": "https://quotes.toscrape.com",
+      "how_run": "scrape_website() and save_to_csv() called with this URL",
+      "records_found": 1,
+      "csv_written": true,
+      "log": [
+        "2026-11-02 21:35:13,030 - INFO - Successfully scraped https://quotes.toscrape.com. Found 1 records.",
+        "2026-11-02 21:35:13,031 - INFO - Data successfully saved to quotes.toscrape.com.csv"
+      ],
+      "records": [
+        {
+          "title": "Top Ten tags",
+          "link": "",
+          "scraped_at": "2026-11-02T21:35:13.030296"
+        }
+      ]
+    }
+  ]
+}
