@@ -6,6 +6,6 @@
   "scripts": {
     "test:security": "node test_security.js"
   },
-  "author": "Formation Agentic Ops",
+  "author": "Agentic Ops Training",
   "license": "ISC"
 }

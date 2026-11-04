@@ -21,7 +21,7 @@ try {
     assert.strictEqual(
         hackedLogin.success, 
         false, 
-        "FAILLE CRITIQUE DÉTECTÉE : L'injection SQL a réussi ! Votre prompt IA n'a pas sécurisé la requête."
+        "CRITICAL VULNERABILITY DETECTED: SQL injection succeeded! Your AI prompt did not secure the query."
     );
     
     console.log("-> OK\n");
